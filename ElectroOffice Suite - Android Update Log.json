@@ -1,0 +1,519 @@
+{
+    "product": "ElectroWrite",
+    "appDetails": {
+        "schemaVersion": "1.0",
+        "channels": {
+            "release": {
+                "latestVersion": null,
+                "recommendedVersion": null
+            },
+            "beta": {
+                "latestVersion": "0.0.8",
+                "recommendedVersion": "0.0.8"
+            },
+            "alpha": {
+                "latestVersion": "0.0.6.1",
+                "recommendedVersion": "0.0.6.1"
+            },
+            "pre-alpha": {
+                "latestVersion": "0.0.3.4",
+                "recommendedVersion": "0.0.3.4"
+            }
+        },
+        "minimumSupportedVersion": "0.0.7"
+    },
+    "releases": {
+        "0.0.8": {
+            "channel": "beta",
+            "releaseDate": "2026-10-04",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 21,
+                "targetAPILevel": 36,
+                "minimumVersion": "5.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 23,
+                "recommendedVersion": "6.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added the ElectroWrite Update System."
+                },
+                {
+                    "type": "added",
+                    "description": "Added online update information and changelog support."
+                },
+                {
+                    "type": "added",
+                    "description": "Added support for update channels: Release, Beta, Alpha, and Pre-Alpha."
+                },
+                {
+                    "type": "improved",
+                    "description": "Update information can now describe Android compatibility and recommended app versions."
+                }
+            ]
+        },
+        "0.0.7.1": {
+            "channel": "beta",
+            "releaseDate": "2026-10-04",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 21,
+                "targetAPILevel": 36,
+                "minimumVersion": "5.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 23,
+                "recommendedVersion": "6.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added Android x86 and x86-64 architecture support."
+                },
+                {
+                    "type": "improved",
+                    "description": "Expanded CPU architecture compatibility across ARM32, ARM64, x86, and x86-64."
+                }
+            ]
+        },
+        "0.0.7": {
+            "channel": "beta",
+            "releaseDate": "2026-10-04",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 21,
+                "targetAPILevel": 36,
+                "minimumVersion": "5.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 23,
+                "recommendedVersion": "6.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added support for Android 5.0 and Android 5.1 Lollipop (API levels 21 and 22)."
+                },
+                {
+                    "type": "improved",
+                    "description": "Unified command availability so toolbar and overflow-menu actions stay in sync."
+                }
+            ]
+        },
+        "0.0.6.1": {
+            "channel": "alpha",
+            "releaseDate": "2026-10-04",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added live cursor line and column tracking."
+                },
+                {
+                    "type": "added",
+                    "description": "Added New, Open, and Save commands to the overflow menu."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved the overflow menu with organized dividers and Android-version-aware behavior."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved editor cursor tracking reliability."
+                }
+            ]
+        },
+        "0.0.6": {
+            "channel": "alpha",
+            "releaseDate": "2026-10-04",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added Save As support."
+                },
+                {
+                    "type": "added",
+                    "description": "Expanded the status bar with character count, cursor line and column, and file format information."
+                },
+                {
+                    "type": "improved",
+                    "description": "Document status information now updates as you edit."
+                }
+            ]
+        },
+        "0.0.5.1": {
+            "channel": "alpha",
+            "releaseDate": "2026-10-04",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "improved",
+                    "description": "Updated legacy Android app icons to the official ElectroWrite design."
+                },
+                {
+                    "type": "improved",
+                    "description": "Added the official ElectroWrite design to adaptive app icons on newer Android versions."
+                }
+            ]
+        },
+        "0.0.5": {
+            "channel": "alpha",
+            "releaseDate": "2026-10-04",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added the About ElectroWrite screen."
+                },
+                {
+                    "type": "added",
+                    "description": "Added the application overflow menu."
+                },
+                {
+                    "type": "improved",
+                    "description": "Added an Android-compatible ElectroWrite icon for the About screen."
+                }
+            ]
+        },
+        "0.0.4.4": {
+            "channel": "alpha",
+            "releaseDate": "2026-10-04",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added the first official ElectroWrite application icons."
+                }
+            ]
+        },
+        "0.0.4.3": {
+            "channel": "alpha",
+            "releaseDate": "2026-10-04",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added Open and Save support for text documents."
+                },
+                {
+                    "type": "improved",
+                    "description": "Updated the Android app name to ElectroWrite."
+                }
+            ]
+        },
+        "0.0.4.2": {
+            "channel": "alpha",
+            "releaseDate": "2026-10-03",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added an unsaved-changes warning before leaving or replacing a modified document."
+                },
+                {
+                    "type": "improved",
+                    "description": "ElectroWrite now recognizes when document content returns to its last saved state."
+                }
+            ]
+        },
+        "0.0.4.1": {
+            "channel": "alpha",
+            "releaseDate": "2026-10-03",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added Undo and Redo support."
+                },
+                {
+                    "type": "improved",
+                    "description": "Toolbar buttons now automatically enable or disable when their commands are available."
+                }
+            ]
+        },
+        "0.0.4": {
+            "channel": "alpha",
+            "releaseDate": "2026-10-03",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added the main document toolbar."
+                },
+                {
+                    "type": "added",
+                    "description": "Added live word counting to the document status bar."
+                },
+                {
+                    "type": "added",
+                    "description": "Added the first working editor commands and toolbar controls."
+                }
+            ]
+        },
+        "0.0.3.4": {
+            "channel": "pre-alpha",
+            "releaseDate": "2026-10-03",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "improved",
+                    "description": "Improved layout detection and initialization reliability."
+                },
+                {
+                    "type": "improved",
+                    "description": "Added a more reliable root layout for the main editor."
+                }
+            ]
+        },
+        "0.0.3.3": {
+            "channel": "pre-alpha",
+            "releaseDate": "2026-10-03",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "improved",
+                    "description": "Improved modern Android system-bar and screen-inset handling."
+                },
+                {
+                    "type": "improved",
+                    "description": "Simplified the editor layout for better reliability."
+                }
+            ]
+        },
+        "0.0.3.2": {
+            "channel": "pre-alpha",
+            "releaseDate": "2026-10-03",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "improved",
+                    "description": "Improved system-bar handling across different Android versions."
+                },
+                {
+                    "type": "fixed",
+                    "description": "Improved protection against ElectroWrite content overlapping Android system bars."
+                }
+            ]
+        },
+        "0.0.3.1": {
+            "channel": "pre-alpha",
+            "releaseDate": "2026-10-03",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "improved",
+                    "description": "Refined the ElectroWrite interface and Android status bar appearance."
+                }
+            ]
+        },
+        "0.0.3": {
+            "channel": "pre-alpha",
+            "releaseDate": "2026-10-03",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added the first visual styling system for ElectroWrite."
+                }
+            ]
+        },
+        "0.0.2": {
+            "channel": "pre-alpha",
+            "releaseDate": "2026-10-03",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added the first document editor layout."
+                }
+            ]
+        },
+        "0.0.1.1": {
+            "channel": "pre-alpha",
+            "releaseDate": "2026-10-03",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "improved",
+                    "description": "Established the app structure for activities and document data."
+                },
+                {
+                    "type": "improved",
+                    "description": "Added the foundation for tracking the current document and its state."
+                }
+            ]
+        },
+        "0.0.1": {
+            "channel": "pre-alpha",
+            "releaseDate": "2026-10-03",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 23,
+                "targetAPILevel": 36,
+                "minimumVersion": "6.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 28,
+                "recommendedVersion": "9.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Introduced the first Android version of ElectroWrite."
+                },
+                {
+                    "type": "added",
+                    "description": "Added the initial ElectroWrite app identity and product information."
+                }
+            ]
+        }
+    }
+}
