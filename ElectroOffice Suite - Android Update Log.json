@@ -8,7 +8,7 @@
                 "recommendedVersion": null
             },
             "beta": {
-                "latestVersion": "0.0.8.2",
+                "latestVersion": "0.0.8.3",
                 "recommendedVersion": "0.0.8.2"
             },
             "alpha": {
@@ -23,6 +23,46 @@
         "minimumSupportedVersion": "0.0.7"
     },
     "releases": {
+        "0.0.8.3": {
+            "channel": "beta",
+            "releaseDate": "2026-10-06",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 21,
+                "targetAPILevel": 36,
+                "minimumVersion": "5.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 23,
+                "recommendedVersion": "6.0"
+            },
+            "changelog": [
+                {
+                    "type": "ui-ux",
+                    "description": "Added animated visual feedback to the ElectroWrite Update interface."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added a pulsing glow animation around the ElectroWrite icon while checking for updates."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added state-colored update glows for successful, available, recommended, warning, and failed update-check results."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added a polished result animation when an update check finishes."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added an animated ElectroWrite icon entrance to the About ElectroWrite screen."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved update-check animation transitions so checking animations cleanly transition into result animations."
+                }
+            ]
+        },
         "0.0.8.2": {
             "channel": "beta",
             "releaseDate": "2026-10-05",
