@@ -8,7 +8,7 @@
                 "recommendedVersion": null
             },
             "beta": {
-                "latestVersion": "0.0.8.3",
+                "latestVersion": "0.0.8.4",
                 "recommendedVersion": "0.0.8.2"
             },
             "alpha": {
@@ -21,6 +21,42 @@
             }
         },
         "minimumSupportedVersion": "0.0.7"
+    },
+    "0.0.8.4": {
+        "channel": "beta",
+        "releaseDate": "2026-10-06",
+        "downloadUrl": "",
+        "releasePage": "",
+        "android": {
+            "minimumAPILevel": 21,
+            "targetAPILevel": 36,
+            "minimumVersion": "5.0",
+            "targetVersion": "16",
+            "recommendedAPILevel": 23,
+            "recommendedVersion": "6.0"
+        },
+        "changelog": [
+            {
+                "type": "ui-ux",
+                "description": "Improved ElectroWrite icon glow visibility across the About and Update interfaces."
+            },
+            {
+                "type": "improved",
+                "description": "Increased update-status glow intensity for clearer visual feedback on light backgrounds."
+            },
+            {
+                "type": "ui-ux",
+                "description": "Expanded the icon glow area to create a larger and more noticeable visual halo."
+            },
+            {
+                "type": "improved",
+                "description": "Improved the update-checking pulse with a stronger and more visible glow animation."
+            },
+            {
+                "type": "ui-ux",
+                "description": "Improved the About ElectroWrite entrance glow while preserving its calmer visual appearance."
+            }
+        ]
     },
     "releases": {
         "0.0.8.3": {
