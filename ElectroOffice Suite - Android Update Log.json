@@ -8,8 +8,8 @@
                 "recommendedVersion": null
             },
             "beta": {
-                "latestVersion": "0.0.8.1",
-                "recommendedVersion": "0.0.8.1"
+                "latestVersion": "0.0.8.2",
+                "recommendedVersion": "0.0.8.2"
             },
             "alpha": {
                 "latestVersion": "0.0.6.1",
@@ -23,6 +23,46 @@
         "minimumSupportedVersion": "0.0.7"
     },
     "releases": {
+        "0.0.8.2": {
+            "channel": "beta",
+            "releaseDate": "2026-10-05",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 21,
+                "targetAPILevel": 36,
+                "minimumVersion": "5.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 23,
+                "recommendedVersion": "6.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added a shared update-status display system for consistent update information across ElectroWrite."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved the About ElectroWrite screen with a dedicated Check for Updates button."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved the About screen so it displays the latest known update status using the same status information as the ElectroWrite Update screen."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved update checking so checking, success, compatibility, and failure states are stored consistently."
+                },
+                {
+                    "type": "bug-fixed",
+                    "description": "Fixed update-check failure handling so returned update-service errors are stored and displayed correctly."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Updated the About ElectroWrite description and default update-status presentation."
+                }
+            ]
+        },
         "0.0.8.1": {
             "channel": "beta",
             "releaseDate": "2026-10-05",
