@@ -8,8 +8,8 @@
                 "recommendedVersion": null
             },
             "beta": {
-                "latestVersion": "0.0.8",
-                "recommendedVersion": "0.0.8"
+                "latestVersion": "0.0.8.1",
+                "recommendedVersion": "0.0.8.1"
             },
             "alpha": {
                 "latestVersion": "0.0.6.1",
@@ -23,6 +23,50 @@
         "minimumSupportedVersion": "0.0.7"
     },
     "releases": {
+        "0.0.8.1": {
+            "channel": "beta",
+            "releaseDate": "2026-10-05",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 21,
+                "targetAPILevel": 36,
+                "minimumVersion": "5.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 23,
+                "recommendedVersion": "6.0"
+            },
+            "changelog": [
+                {
+                    "type": "improved",
+                    "description": "Improved the cumulative What's New system with clearer release information and update counts."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved update channel display names with consistent capitalization, including Pre-Alpha."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added status icons and emojis throughout the ElectroWrite Update interface."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added category icons to changelog sections for faster visual identification."
+                },
+                {
+                    "type": "added",
+                    "description": "Added support for Major Bug Fixed, Bug Fixed, Performance, UI/UX, Accessibility, and additional changelog categories."
+                },
+                {
+                    "type": "changed",
+                    "description": "Release dates are now displayed in a more readable long-date format."
+                },
+                {
+                    "type": "improved",
+                    "description": "Cumulative changelog results are now limited to the latest version declared by the active update channel."
+                }
+            ]
+        },
         "0.0.8": {
             "channel": "beta",
             "releaseDate": "2026-10-04",
@@ -48,6 +92,42 @@
                 {
                     "type": "added",
                     "description": "Added support for update channels: Release, Beta, Alpha, and Pre-Alpha."
+                },
+                {
+                    "type": "added",
+                    "description": "Added cumulative What's New support for displaying changelogs from missed updates."
+                },
+                {
+                    "type": "added",
+                    "description": "Added Android compatibility information for minimum, recommended, and target Android versions."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Added classic Android version codenames to compatibility information for supported legacy Android releases."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Changed update manifest fetching to use the GitHub REST API for improved compatibility with older Android devices."
+                },
+                {
+                    "type": "bug-fixed",
+                    "description": "Fixed update manifest fetching on Android 6.0.1 Marshmallow devices affected by certificate trust errors with the previous GitHub Raw endpoint."
+                },
+                {
+                    "type": "security",
+                    "description": "Update checks continue to require valid HTTPS certificate verification without bypassing certificate security."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved update connection error handling with user-friendly network, timeout, update-data, and secure-connection messages."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved update diagnostics by separating user-facing error messages from technical error details."
+                },
+                {
+                    "type": "improved",
+                    "description": "Updated the About screen to report the current update-system status."
                 },
                 {
                     "type": "improved",
