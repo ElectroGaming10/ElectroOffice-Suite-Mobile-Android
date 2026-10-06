@@ -8,7 +8,7 @@
                 "recommendedVersion": null
             },
             "beta": {
-                "latestVersion": "0.0.8.4",
+                "latestVersion": "0.0.8.5",
                 "recommendedVersion": "0.0.8.2"
             },
             "alpha": {
@@ -23,6 +23,74 @@
         "minimumSupportedVersion": "0.0.7"
     },
     "releases": {
+        "0.0.8.5": {
+            "channel": "beta",
+            "releaseDate": "2026-10-06",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 21,
+                "targetAPILevel": 36,
+                "minimumVersion": "5.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 23,
+                "recommendedVersion": "6.0"
+            },
+            "changelog": [
+                {
+                    "type": "ui-ux",
+                    "description": "Redesigned the About ElectroWrite interface with a more polished card-based layout."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added a dedicated Application Information card to the About screen for ElectroWrite product, platform, developer, and brand information."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Redesigned the About screen's Update Status section with a dedicated status card and primary Check for Updates action."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added a staggered entrance animation to the About ElectroWrite interface."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Redesigned the ElectroWrite Update interface with dedicated Update Status, Version Information, Android Compatibility, and What's New cards."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added dynamic update-status card colors for checking, successful, available, recommended, compatibility-warning, and failed update states."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added a staggered entrance animation to the ElectroWrite Update interface."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added animated result feedback to updater information cards when an update check completes."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved update-result transitions so update information, status colors, icon glows, and card animations respond together."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved update animation stability by coordinating entrance and result animations during fast update checks."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved update-screen animation safety so delayed result animations do not continue after leaving the Update interface."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Refined ElectroWrite buttons, cards, spacing, typography, and information hierarchy across the About and Update interfaces."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Maintained the redesigned About and Update interfaces using Android-compatible UI and animation behavior for supported legacy Android devices."
+                }
+            ]
+        },
         "0.0.8.4": {
             "channel": "beta",
             "releaseDate": "2026-10-06",
