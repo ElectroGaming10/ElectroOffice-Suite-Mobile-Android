@@ -8,7 +8,7 @@
                 "recommendedVersion": null
             },
             "beta": {
-                "latestVersion": "0.0.8.5",
+                "latestVersion": "0.0.8.6",
                 "recommendedVersion": "0.0.8.2"
             },
             "alpha": {
@@ -23,6 +23,74 @@
         "minimumSupportedVersion": "0.0.7"
     },
     "releases": {
+        "0.0.8.6": {
+            "channel": "beta",
+            "releaseDate": "2026-10-07",
+            "downloadUrl": "",
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 21,
+                "targetAPILevel": 36,
+                "minimumVersion": "5.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 23,
+                "recommendedVersion": "6.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added an Ahead of Channel update state for installations newer than the latest version available in the active update channel."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added dedicated visual feedback for the Ahead of Channel state, including violet status styling, icon glow, and a special multi-stage result animation."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved update-status messages to clearly identify when the installed ElectroWrite version is newer than the latest version in its update channel."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved Update button behavior so its state and label respond consistently to the current update result."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved update action handling by centralizing Update button state management."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved updater state handling for checking, available, unavailable, up-to-date, and ahead-of-channel results."
+                },
+                {
+                    "type": "added",
+                    "description": "Added Last Checked information to the About ElectroWrite and ElectroWrite Update interfaces."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved Last Checked information with Today, Yesterday, and dated timestamp formatting."
+                },
+                {
+                    "type": "bug-fixed",
+                    "description": "Fixed Ahead of Channel detection for development builds that are newer than every release currently listed in the update manifest."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved update channel selection so unlisted development builds can fall back to the Beta channel for update evaluation."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved updater diagnostics when an update channel does not contain valid latest-version information."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Added Android-version-aware Ahead of Channel status icons, using a legacy-compatible symbol on older Android versions that do not reliably support the newer test-tube emoji."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Improved Ahead of Channel presentation on legacy Android devices, including Android 6.0.1 Marshmallow."
+                }
+            ]
+        },
         "0.0.8.5": {
             "channel": "beta",
             "releaseDate": "2026-10-06",
