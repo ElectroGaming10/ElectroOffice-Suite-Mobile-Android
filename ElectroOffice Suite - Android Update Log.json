@@ -26,8 +26,8 @@
         "0.0.8.6": {
             "channel": "beta",
             "releaseDate": "2026-10-07",
-            "downloadUrl": "",
-            "releasePage": "",
+            "downloadUrl": "https://github.com/ElectroGaming10/ElectroOffice-Suite-Mobile-Android/releases/download/0.0.8.6/ElectroWrite-0.0.8.6.apk",
+            "releasePage": "https://github.com/ElectroGaming10/ElectroOffice-Suite-Mobile-Android/releases/tag/0.0.8.6",
             "android": {
                 "minimumAPILevel": 21,
                 "targetAPILevel": 36,
