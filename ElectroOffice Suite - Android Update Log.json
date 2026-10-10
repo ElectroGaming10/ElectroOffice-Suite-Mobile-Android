@@ -1,7 +1,7 @@
 {
     "product": "ElectroWrite",
     "appDetails": {
-        "schemaVersion": "1.0",
+        "schemaVersion": "1.1",
         "channels": {
             "release": {
                 "latestVersion": null,
@@ -23,10 +23,212 @@
         "minimumSupportedVersion": "0.0.7"
     },
     "releases": {
+        "0.0.9": {
+            "channel": "beta",
+            "releaseDate": "",
+            "downloadUrl": "",
+            "sha256": null,
+            "releasePage": "",
+            "android": {
+                "minimumAPILevel": 21,
+                "targetAPILevel": 36,
+                "minimumVersion": "5.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 23,
+                "recommendedVersion": "6.0"
+            },
+            "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added a foreground-service-based APK downloader that can continue downloading when the Update screen is closed or the Activity is recreated."
+                },
+                {
+                    "type": "added",
+                    "description": "Added a persistent downloaded-update record containing the APK path, version, file size, source URL, and download completion state."
+                },
+                {
+                    "type": "added",
+                    "description": "Added restoration of completed download information after restarting ElectroWrite."
+                },
+                {
+                    "type": "added",
+                    "description": "Added a dedicated in-memory download state store to synchronize the foreground service with the Update interface."
+                },
+                {
+                    "type": "added",
+                    "description": "Added live download progress reporting, including transferred bytes, total bytes when available, and percentage."
+                },
+                {
+                    "type": "added",
+                    "description": "Added HTTP Range support to resume interrupted APK downloads instead of restarting from the beginning when the server supports resuming."
+                },
+                {
+                    "type": "added",
+                    "description": "Added ETag-based resume validation to help detect changed remote APK files."
+                },
+                {
+                    "type": "added",
+                    "description": "Added resumable-download metadata stored alongside partial downloads."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved download completion checks using transferred-byte totals and file-size validation."
+                },
+                {
+                    "type": "added",
+                    "description": "Added automatic retries for recoverable download failures, with progressively longer delays."
+                },
+                {
+                    "type": "added",
+                    "description": "Added retry-attempt tracking and countdown messages for interrupted downloads."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved retry handling so users can see when the next download attempt will begin."
+                },
+                {
+                    "type": "added",
+                    "description": "Added cancellation support for foreground downloads, including cancellation from the notification."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved cancellation handling to prevent late progress callbacks from restoring an active download state."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved coordination between download lifecycle events, notifications, and Activity state changes."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved download error reporting for network interruptions, failures, and cancellations."
+                },
+                {
+                    "type": "added",
+                    "description": "Added a dedicated Android notification channel for update downloads on Android 8.0 and newer."
+                },
+                {
+                    "type": "added",
+                    "description": "Added foreground notifications showing the current update-download status."
+                },
+                {
+                    "type": "added",
+                    "description": "Added notification actions to open the Update screen and cancel an active download."
+                },
+                {
+                    "type": "added",
+                    "description": "Added separate notifications for completed, failed, and cancelled downloads."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added dynamic notification titles for preparing, downloading, retrying, cancelling, completed, failed, and cancelled states."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added expanded notification details showing the ElectroWrite version and download progress."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved notification update throttling to avoid unnecessary rapid refreshes."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Added notification behavior that adapts to Android versions with and without notification channels."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added animated download-progress feedback in the ElectroWrite Update interface."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added a dedicated retry animation when a download is interrupted and waiting to resume."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added one-time failure animation feedback for unsuccessful downloads."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added one-time cancellation animation feedback for intentionally cancelled downloads."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added completion animation feedback when a foreground-service download finishes."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved animation lifecycle handling to avoid replaying old completion, failure, or cancellation animations."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved Update screen restoration when returning from a notification or recreating the Activity."
+                },
+                {
+                    "type": "added",
+                    "description": "Added update-cache scanning and storage-size diagnostics for APK files in the private updates directory."
+                },
+                {
+                    "type": "added",
+                    "description": "Added cache-file classification for protected files, possible obsolete APKs, partial downloads, and unknown files."
+                },
+                {
+                    "type": "added",
+                    "description": "Added read-only cleanup previews showing potential deletion candidates and recoverable storage."
+                },
+                {
+                    "type": "added",
+                    "description": "Added a cache-cleanup plan and result model for future controlled cleanup operations."
+                },
+                {
+                    "type": "security",
+                    "description": "Added safeguards to preserve the saved completed APK and active download paths during cache-cleanup planning."
+                },
+                {
+                    "type": "security",
+                    "description": "Added managed-directory, filename, and file-attribute checks to the cache-cleanup execution foundation."
+                },
+                {
+                    "type": "security",
+                    "description": "Kept automatic update-cache deletion disabled while download coordination and deletion authorization are being finalized."
+                },
+                {
+                    "type": "added",
+                    "description": "Added an update-file coordination helper for future exclusive access to update files."
+                },
+                {
+                    "type": "security",
+                    "description": "Added a SHA-256 integrity verification utility that hashes APK files without loading the entire file into memory."
+                },
+                {
+                    "type": "security",
+                    "description": "Added SHA-256 checksum format validation and constant-time digest comparison."
+                },
+                {
+                    "type": "added",
+                    "description": "Added a per-release sha256 field to the update manifest model."
+                },
+                {
+                    "type": "security",
+                    "description": "Added SHA-256 metadata validation before starting new foreground-service downloads."
+                },
+                {
+                    "type": "security",
+                    "description": "Added expected-checksum transfer from the Update screen to the foreground download task."
+                },
+                {
+                    "type": "improved",
+                    "description": "Prepared the updater for post-download checksum verification; automatic verification and installation gating remain under development."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Maintained the updater’s Android 5.0 (API 21) minimum compatibility target while adding background download features."
+                }
+            ]
+        },
         "0.0.8.6": {
             "channel": "beta",
             "releaseDate": "2026-10-07",
             "downloadUrl": "https://github.com/ElectroGaming10/ElectroOffice-Suite-Mobile-Android/releases/download/0.0.8.6/ElectroWrite-0.0.8.6.apk",
+            "sha256": "2DEFF074B168CDD5F80EDA3E8C2C34E3D3F710B040654B33A840EF17CBA23300",
             "releasePage": "https://github.com/ElectroGaming10/ElectroOffice-Suite-Mobile-Android/releases/tag/0.0.8.6",
             "android": {
                 "minimumAPILevel": 21,
