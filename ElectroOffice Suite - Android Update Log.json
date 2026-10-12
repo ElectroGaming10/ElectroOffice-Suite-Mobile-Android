@@ -8,8 +8,8 @@
                 "recommendedVersion": null
             },
             "beta": {
-                "latestVersion": "0.0.9",
-                "recommendedVersion": "0.0.9"
+                "latestVersion": "0.0.9.1",
+                "recommendedVersion": "0.0.9.1"
             },
             "alpha": {
                 "latestVersion": "0.0.6.1",
@@ -20,9 +20,74 @@
                 "recommendedVersion": "0.0.3.4"
             }
         },
-        "minimumSupportedVersion": "0.0.7"
+        "minimumSupportedVersion": "0.0.8"
     },
     "releases": {
+        "0.0.9.1": {
+            "channel": "beta",
+            "releaseDate": "2026-10-12",
+            "downloadUrl": "https://github.com/ElectroGaming10/ElectroOffice-Suite-Mobile-Android/releases/download/0.0.9.1/electrowrite-0.0.9.1.apk",
+            "sha256": "FBA0A25DF9D9DDA641F8B3F3E8F12DFB4858434214BB18803E2DFF7A2AF01D43",
+            "releasePage": "https://github.com/ElectroGaming10/ElectroOffice-Suite-Mobile-Android/releases/tag/0.0.9.1",
+            "android": {
+                "minimumAPILevel": 21,
+                "targetAPILevel": 36,
+                "minimumVersion": "5.0",
+                "targetVersion": "16",
+                "recommendedAPILevel": 23,
+                "recommendedVersion": "6.0"
+            },
+            "changelog": [
+                {
+                    "type": "major-bug-fixed",
+                    "description": "Fixed update information remaining cached after an ElectroWrite upgrade by detecting when the installed app version has changed, even within the 30-minute cache window."
+                },
+                {
+                    "type": "major-bug-fixed",
+                    "description": "Prevented previously downloaded APKs for the installed version or older releases from being offered for installation again."
+                },
+                {
+                    "type": "security",
+                    "description": "Added installed-version checks before update downloads and installations, including another validation after acquiring the update-file coordination lock."
+                },
+                {
+                    "type": "bug-fixed",
+                    "description": "Prevented completed foreground-service download records for already installed or older versions from restoring outdated 'ready to install' messages."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved post-upgrade changelog filtering by comparing releases against the actual currently installed ElectroWrite version rather than a cached update-check result."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Reset the What's New heading when there are no newer changelog entries."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Improved the Major Bug Fixed changelog icon for Android 6.0/6.0.1 (API 23) and earlier by using a legacy-compatible hammer emoji."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added clearer Android compatibility messages for devices below the minimum requirement, within the declared target range, and newer than the release's target API."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Added a future-proof compatibility notice for Android versions newer than the release's target, without automatically treating them as incompatible."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Updated the Android compile SDK to 36.1 while retaining Android 5.0 (API 21) as the minimum requirement and Android 16 (API 36) as the target SDK."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Added Android 17 (API 37) to runtime compatibility testing; Android 17 is not the app's target SDK."
+                },
+                {
+                    "type": "improved",
+                    "description": "Raised the Android application version code to 28 for correct upgrades from previously published builds."
+                }
+            ]
+        },
         "0.0.9": {
             "channel": "beta",
             "releaseDate": "2026-10-12",
