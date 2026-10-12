@@ -8,8 +8,8 @@
                 "recommendedVersion": null
             },
             "beta": {
-                "latestVersion": "0.0.8.6",
-                "recommendedVersion": "0.0.8.2"
+                "latestVersion": "0.0.9",
+                "recommendedVersion": "0.0.9"
             },
             "alpha": {
                 "latestVersion": "0.0.6.1",
@@ -25,10 +25,10 @@
     "releases": {
         "0.0.9": {
             "channel": "beta",
-            "releaseDate": "",
-            "downloadUrl": "",
-            "sha256": null,
-            "releasePage": "",
+            "releaseDate": "2026-10-12",
+            "downloadUrl": "https://github.com/ElectroGaming10/ElectroOffice-Suite-Mobile-Android/releases/download/0.0.9/ElectroWrite-0.0.9.apk",
+            "sha256": "3E0D11B5A71FA755F75BA6E5EF1C800D67A429BD716C9BCC2F09806458056857",
+            "releasePage": "https://github.com/ElectroGaming10/ElectroOffice-Suite-Mobile-Android/releases/tag/0.0.9",
             "android": {
                 "minimumAPILevel": 21,
                 "targetAPILevel": 36,
@@ -38,6 +38,22 @@
                 "recommendedVersion": "6.0"
             },
             "changelog": [
+                {
+                    "type": "added",
+                    "description": "Added Find & Replace to the document editor with Find Next, Replace, and Replace All commands."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved text searching with case-insensitive matching, wraparound to the beginning of the document, and selection-aware Find Next behavior."
+                },
+                {
+                    "type": "improved",
+                    "description": "Integrated Replace and Replace All with document modification tracking and Undo/Redo history."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added Find & Replace feedback for unmatched searches and the number of occurrences replaced."
+                },
                 {
                     "type": "added",
                     "description": "Added a foreground-service-based APK downloader that can continue downloading when the Update screen is closed or the Activity is recreated."
@@ -127,8 +143,8 @@
                     "description": "Added expanded notification details showing the ElectroWrite version and download progress."
                 },
                 {
-                    "type": "improved",
-                    "description": "Improved notification update throttling to avoid unnecessary rapid refreshes."
+                    "type": "performance",
+                    "description": "Reduced unnecessary notification refreshes by throttling update-progress notifications."
                 },
                 {
                     "type": "compatibility",
@@ -153,6 +169,14 @@
                 {
                     "type": "ui-ux",
                     "description": "Added completion animation feedback when a foreground-service download finishes."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added a dedicated Verifying... state in the Update interface and foreground download notification while the APK SHA-256 checksum is checked."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added a verified-download completion message confirming that SHA-256 verification passed and the APK is ready for installation."
                 },
                 {
                     "type": "improved",
@@ -215,12 +239,204 @@
                     "description": "Added expected-checksum transfer from the Update screen to the foreground download task."
                 },
                 {
-                    "type": "improved",
-                    "description": "Prepared the updater for post-download checksum verification; automatic verification and installation gating remain under development."
+                    "type": "security",
+                    "description": "Completed automatic post-download SHA-256 integrity verification and blocked installation until the downloaded APK passes validation."
+                },
+                {
+                    "type": "security",
+                    "description": "Rejected legacy or unverified saved-download records when restoring the Update screen, preventing an untrusted APK from being shown as ready to install."
                 },
                 {
                     "type": "compatibility",
                     "description": "Maintained the updater’s Android 5.0 (API 21) minimum compatibility target while adding background download features."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added live APK download-speed and estimated-time-remaining information to the Update screen."
+                },
+                {
+                    "type": "security",
+                    "description": "Added another SHA-256 integrity check before handing a downloaded APK to Android for installation."
+                },
+                {
+                    "type": "security",
+                    "description": "Improved validation of downloaded APKs against the selected release version, source URL, and expected checksum."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Added application-scoped HTTPS certificate compatibility for Android 5.0 and 5.1 using verified Sectigo Root E46 and ISRG Root X1 certificates."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Added GitHub release-asset download certificate compatibility for Android 6.0 Marshmallow (API 23)."
+                },
+                {
+                    "type": "security",
+                    "description": "Maintained HTTPS certificate verification and automatic GitHub download redirects without bypassing TLS security."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved support for GitHub Release APK download redirects to release-assets.githubusercontent.com on legacy Android devices."
+                },
+                {
+                    "type": "major-bug-fixed",
+                    "description": "Fixed APK download certificate verification errors that prevented updates on supported Android 5.0, 5.1, and 6.0 devices."
+                },
+                {
+                    "type": "added",
+                    "description": "Added installation of verified downloaded APK updates directly from the ElectroWrite Update screen."
+                },
+                {
+                    "type": "security",
+                    "description": "Added safeguards to prevent installation while an APK download is still active."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added an unsaved-document warning before opening the Android update installer."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added a guided Android install-permission prompt on Android versions that require per-app permission for APK installation."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Added a file-based installation handoff specifically for Android 5.0 Lollipop (API 21)."
+                },
+                {
+                    "type": "security",
+                    "description": "Added SHA-256 verification and safe reuse of public Downloads APK copies used by the Android 5.0 installer."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Added PackageInstaller session-based installation handoff for Android 5.1 through 6.0 (API 22–23)."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Preserved the FileProvider-based APK installation handoff on Android 7.0 and newer."
+                },
+                {
+                    "type": "added",
+                    "description": "Added private installer-staging copies so Android can install a verified APK without depending on the original download file remaining unchanged."
+                },
+                {
+                    "type": "security",
+                    "description": "Added checksum-based validation of staged installer APKs and their installation metadata."
+                },
+                {
+                    "type": "performance",
+                    "description": "Improved installation preparation by reusing verified staged APK copies instead of repeatedly copying large files."
+                },
+                {
+                    "type": "performance",
+                    "description": "Avoided redundant downloads when the same release APK is already stored and passes the existing verified-download checks."
+                },
+                {
+                    "type": "added",
+                    "description": "Added persistent installation-attempt records with target version, previously installed version, and unique handoff identifiers."
+                },
+                {
+                    "type": "added",
+                    "description": "Added separate installation-attempt history so earlier attempts remain available when staged APK metadata is reused."
+                },
+                {
+                    "type": "improved",
+                    "description": "Protected completed installation-history outcomes from stale snapshot overwrites and added guarded version-observation updates."
+                },
+                {
+                    "type": "added",
+                    "description": "Added Android PackageInstaller result tracking for pending user action, successful installs, cancelled installs, and failures on supported legacy versions."
+                },
+                {
+                    "type": "improved",
+                    "description": "Matched Android installer callbacks to unique installation attempt IDs so delayed results cannot overwrite a newer attempt."
+                },
+                {
+                    "type": "added",
+                    "description": "Added installation-outcome reconciliation that checks the installed version after ElectroWrite resumes or restarts."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved cancelled-installation handling so a rejected installation does not appear as a successful update."
+                },
+                {
+                    "type": "added",
+                    "description": "Added read-only installation-outcome, installation-history, and recovery diagnostics in Logcat."
+                },
+                {
+                    "type": "added",
+                    "description": "Added installation-staging storage and retention previews to report protected files and possible future cleanup candidates."
+                },
+                {
+                    "type": "security",
+                    "description": "Added protections for staged APKs referenced by installer handoffs or historical installation attempts."
+                },
+                {
+                    "type": "security",
+                    "description": "Added interrupted-write detection for temporary installation metadata and history files; cleanup eligibility is suspended when unfinished writes are found."
+                },
+                {
+                    "type": "security",
+                    "description": "Added safeguards that suspend staged-APK cleanup when installation history is invalid or uncertain."
+                },
+                {
+                    "type": "added",
+                    "description": "Added historical-reference inspection to prevent cleanup previews from treating referenced APKs as disposable."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved read-only cleanup diagnostics with protected-file counts, potential storage savings, and human-readable safety status."
+                },
+                {
+                    "type": "security",
+                    "description": "Kept automatic deletion of downloaded, staged, and Android 5.0 public APK copies disabled until a complete deletion policy is validated."
+                },
+                {
+                    "type": "added",
+                    "description": "Added Android 5.0 public APK storage diagnostics to support future safe cleanup decisions."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added an immediate Preparing Installation... button state while ElectroWrite verifies and prepares an APK."
+                },
+                {
+                    "type": "ui-ux",
+                    "description": "Added Installation in Progress... and Installation Complete ✓ button states during Android installer handoff and recorded success."
+                },
+                {
+                    "type": "improved",
+                    "description": "Prevented duplicate installation requests by disabling Install Update during preparation and installer handoff."
+                },
+                {
+                    "type": "improved",
+                    "description": "Restored Install Update availability after a matching Android 5.1–6.0 installer attempt reports cancellation or failure."
+                },
+                {
+                    "type": "improved",
+                    "description": "Kept Install Update disabled while Android's installation outcome remains unconfirmed."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Validated update checks, APK downloads, and installer handoffs on Android 5.0/5.1 emulators, legacy Galaxy S4/S5 devices, and an Android 10 device."
+                },
+                {
+                    "type": "known-issue",
+                    "description": "On Android 5.1–6.0, leaving the installer without a recorded final result may leave Install Update showing Installation in Progress... until ElectroWrite is restarted. This prevents duplicate installer requests while the result is uncertain."
+                },
+                {
+                    "type": "major-bug-fixed",
+                    "description": "Fixed the Android 5.0 installer-unavailable error by introducing an API 21-compatible APK installation handoff."
+                },
+                {
+                    "type": "improved",
+                    "description": "Improved installation error messages for missing APK files, mismatched release information, failed SHA-256 verification, and unexpected file changes."
+                },
+                {
+                    "type": "improved",
+                    "description": "Preserved verified downloaded APKs after cancelled installations so users can retry without downloading the same update again."
+                },
+                {
+                    "type": "compatibility",
+                    "description": "Restored installer-button availability when returning from Android 5.0 and Android 7.0+ non-session installer handoffs."
                 }
             ]
         },
