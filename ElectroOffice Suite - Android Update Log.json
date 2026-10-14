@@ -805,8 +805,9 @@
         "0.0.8": {
             "channel": "beta",
             "releaseDate": "2026-10-04",
-            "downloadUrl": "",
-            "releasePage": "",
+            "downloadUrl": "https://github.com/ElectroGaming10/ElectroOffice-Suite-Mobile-Android/releases/download/0.0.8/electrowrite-0.0.8.apk",
+            "sha256": "DA29E12C495F3504EB2880AE7EF299E35E60E4161CBE7C5666B5027F59905CF9",
+            "releasePage": "https://github.com/ElectroGaming10/ElectroOffice-Suite-Mobile-Android/releases/tag/0.0.8",
             "android": {
                 "minimumAPILevel": 21,
                 "targetAPILevel": 36,
