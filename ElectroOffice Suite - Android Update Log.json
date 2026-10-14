@@ -874,8 +874,9 @@
         "0.0.7.1": {
             "channel": "beta",
             "releaseDate": "2026-10-04",
-            "downloadUrl": "",
-            "releasePage": "",
+            "downloadUrl": "https://github.com/ElectroGaming10/ElectroOffice-Suite-Mobile-Android/releases/download/0.0.7.1/electrowrite-0.0.7.1.apk",
+            "sha256": "19AF609EBFA019DF8A068C5ED7D3FD4751DD9C10304F1FB7D06CFCE5FA4B7B0D",
+            "releasePage": "https://github.com/ElectroGaming10/ElectroOffice-Suite-Mobile-Android/releases/tag/0.0.7.1",
             "android": {
                 "minimumAPILevel": 21,
                 "targetAPILevel": 36,
